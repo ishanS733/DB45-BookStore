@@ -26,4 +26,3 @@ Link to the schema: https://drive.google.com/file/d/1k09HXmjKZrS7lT4e1AmWkFEfusr
 - Hardik Saini (IIIT-D)
 - Nikhil Yadav (IIIT-D)
 - Sonali Supriya (IIIT-D)
-- 
