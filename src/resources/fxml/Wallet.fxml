@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WalletController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="250.0" spacing="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="home" onMouseClicked="#homePressed" prefHeight="37.0" prefWidth="133.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label fx:id="userWelcomeLabel" layoutX="48.0" layoutY="82.0" prefHeight="39.0" prefWidth="204.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fx:id="user_icon" fill="#acacac" glyphName="USER" layoutX="95.0" layoutY="63.0" onMouseClicked="#user_iconPressed" size="30" />
+      <JFXButton fx:id="Transfer" layoutX="892.0" layoutY="46.0" onMouseClicked="#transferClicked" prefHeight="44.0" prefWidth="113.0" style="-fx-background-color: #1F98F5;" text="Transfer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="balanceLabel" layoutX="645.0" layoutY="152.0" prefHeight="39.0" prefWidth="204.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cardNoLabel" layoutX="626.0" layoutY="251.0" prefHeight="39.0" prefWidth="204.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="purchases" layoutX="515.0" layoutY="378.0" onMouseClicked="#purchasesClicked" prefHeight="50.0" prefWidth="223.0" style="-fx-background-color: #1F98F5;" text="Purchase History" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="transactions" layoutX="512.0" layoutY="509.0" onMouseClicked="#transactionsClicked" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1F98F5;" text="Transaction History" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="cardNo" layoutX="501.0" layoutY="160.0" prefHeight="100.0" prefWidth="115.0" text="Card No." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="Balance" alignment="CENTER" layoutX="494.0" layoutY="128.0" prefHeight="20.0" prefWidth="64.0" text="Balance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

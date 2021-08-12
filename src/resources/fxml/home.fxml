@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="250.0" spacing="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="home" onMouseClicked="#homePressed" prefHeight="37.0" prefWidth="133.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="my_account" onMouseClicked="#my_accountPressed" prefHeight="37.0" prefWidth="133.0" text="My Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="wallet" onMouseClicked="#walletPressed" prefHeight="37.0" prefWidth="133.0" text="Wallet" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="wishlist" onMouseClicked="#wishlistPressed" prefHeight="37.0" prefWidth="133.0" text="Wishlist" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="reviewButton" onMouseClicked="#reviewButtonPressed" prefHeight="37.0" prefWidth="133.0" text="New Review" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="yourReviewsButton" onMouseClicked="#yourReviewsButtonPressed" prefHeight="37.0" prefWidth="151.0" text="Your Reviews" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="profile" onMouseClicked="#profilePressed" prefHeight="39.0" prefWidth="159.0" text="View Reviews" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="helpButton" onMouseClicked="#helpButtonPressed" prefHeight="37.0" prefWidth="133.0" text="Help" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="logout" onMouseClicked="#logoutPressed" prefHeight="37.0" prefWidth="133.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="250.0" layoutY="7.0" prefHeight="50.0" prefWidth="950.0" spacing="15.0">
+         <children>
+            <FontAwesomeIconView fx:id="search_icon" fill="WHITE" glyphName="SEARCH" onMouseClicked="#search_iconPressed" size="18" />
+            <JFXTextField fx:id="search_bar" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="29.0" prefWidth="509.0" promptText="Search" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <JFXButton fx:id="advanced_search" onMouseClicked="#advanced_searchPressed" text="Advanced Search" textFill="#e6e0e0" />
+            <JFXButton fx:id="go_to_cart" onMouseClicked="#go_to_cartPressed" text="Go to cart" textFill="#e6e0e0" />
+         </children>
+      </HBox>
+      <TableView fx:id="table" layoutX="250.0" layoutY="123.0" onMouseClicked="#tablePressed" prefHeight="652.0" prefWidth="922.0" />
+      <JFXButton fx:id="buyButton" layoutX="970.0" layoutY="71.0" onMouseClicked="#buyButtonPressed" text="Buy" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addToCart" layoutX="1055.0" layoutY="73.0" onMouseClicked="#addToCartPressed" text="Add To Cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addToWishlist" layoutX="820.0" layoutY="71.0" onMouseClicked="#addToWishlistPressed" text="Add to Wishlist" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="userWelcomeLabel" layoutX="56.0" layoutY="68.0" prefHeight="39.0" prefWidth="176.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fx:id="user_icon" fill="#acacac" glyphName="USER" layoutX="103.0" layoutY="49.0" onMouseClicked="#user_iconPressed" size="30" />
+   </children>
+</AnchorPane>

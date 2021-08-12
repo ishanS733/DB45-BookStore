@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainApplication.Main">
+   <children>
+      <Label layoutX="556.0" layoutY="267.0" prefHeight="51.0" prefWidth="105.0" text="Login  as" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#9da1aa" glyphName="BOOK" layoutX="585.0" layoutY="143.0" size="50" />
+      <VBox alignment="CENTER" layoutX="506.0" layoutY="352.0" prefHeight="329.0" prefWidth="190.0" spacing="30.0">
+         <children>
+            <JFXButton fx:id="userButton" onMouseClicked="#userButtonPressed" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #1F98F5;" text="User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="authorButton" onMouseClicked="#authorButtonPressed" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #1F98F5;" text="Author" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="publisherbutton" onMouseClicked="#publisherbuttonPressed" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #1F98F5;" text="Publisher" textFill="WHITE">
+      
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="adminButton" onMouseClicked="#adminButtonPressed" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #1F98F5;" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="stockManagerButton" onMouseClicked="#stockManagerPressed" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: #1F98F5;" text="Stock Manager" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="475.0" layoutY="173.0" prefHeight="51.0" prefWidth="305.0" text="Welcome To Book Paradise" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

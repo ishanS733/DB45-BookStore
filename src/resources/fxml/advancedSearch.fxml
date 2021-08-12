@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.advancedSearchController">
+    <children>
+        <VBox alignment="CENTER" layoutY="14.0" prefHeight="800.0" prefWidth="250.0" spacing="20.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <JFXButton fx:id="home" onMouseClicked="#homePressed" prefHeight="37.0" prefWidth="133.0" text="Home" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </VBox>
+        <TableView fx:id="results" layoutX="250.0" layoutY="364.0" onMouseClicked="#tablePressed" prefHeight="411.0" prefWidth="922.0" />
+        <Label fx:id="userWelcomeLabel" layoutX="56.0" layoutY="68.0" prefHeight="39.0" prefWidth="176.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <FontAwesomeIconView fx:id="user_icon" fill="#acacac" glyphName="USER" layoutX="103.0" layoutY="49.0" onMouseClicked="#user_iconPressed" size="30" />
+      <JFXButton fx:id="searchButton" layoutX="806.0" layoutY="293.0" onMouseClicked="#searchButtonPressed" prefHeight="37.0" prefWidth="133.0" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <VBox fx:id="verBox" layoutX="374.0" layoutY="14.0" prefHeight="283.0" prefWidth="674.0" spacing="15.0">
+         <children>
+                <JFXTextField fx:id="searchBarBookName" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="11.0" prefWidth="657.0" promptText="Search By Partial Book Name" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <JFXTextField fx:id="searchBarAuthName" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="30.0" prefWidth="650.0" promptText="Search By Partial Author's Name" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <JFXTextField fx:id="searchBarLangauge" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="30.0" prefWidth="650.0" promptText="Search By Partial Langauge" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <JFXTextField fx:id="searchBarYear" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="30.0" prefWidth="650.0" promptText="Search By Partial Year. e.g:- ___1 will give all results of type 2001 &amp; 2011 and etc" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <JFXTextField fx:id="searchBarPrice" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="30.0" prefWidth="650.0" promptText="Price Less Than" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <JFXTextField fx:id="searchBarNationality" focusColor="WHITE" prefHeight="30.0" prefWidth="650.0" promptText="Search By Partial Nationality" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+         </children>
+      </VBox>
+      <JFXCheckBox fx:id="MustBeInStockCheckBox" layoutX="535.0" layoutY="303.0" text="Must Be In Stock" textFill="WHITE" />
+      <Label layoutX="250.0" layoutY="313.0" prefHeight="39.0" prefWidth="176.0" text="Results" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

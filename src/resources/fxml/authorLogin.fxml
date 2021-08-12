@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2D3447; -fx-text-fill: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AuthorLoginController">
+   <children>
+      <GridPane layoutX="480.0" layoutY="257.0" prefHeight="177.0" prefWidth="294.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="252.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="authorField" focusColor="WHITE" onMouseClicked="#authorFieldPressed" promptText="Author ID" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#a4a4a4" GridPane.columnIndex="1" />
+            <JFXPasswordField fx:id="passwordField" focusColor="WHITE" onMouseClicked="#passwordFieldPressed" promptText="Password" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" text="Applebanan" unFocusColor="#a8a8a8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <FontAwesomeIconView fx:id="author_icon" fill="#9da1aaed" glyphName="USER" onMouseClicked="#author_iconPressed" size="30" />
+            <FontAwesomeIconView fx:id="lock_icon" fill="#9da1aa" glyphName="LOCK" onMouseClicked="#lock_iconPressed" size="30" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <FontAwesomeIconView fx:id="logo" fill="#9da1aa" glyphName="BOOK" layoutX="597.0" layoutY="151.0" onMouseClicked="#logoPressed" size="50" />
+      <JFXButton fx:id="loginButton" layoutX="592.0" layoutY="467.0" onMouseClicked="#onLoginClicked" prefHeight="44.0" prefWidth="80.0" style="-fx-background-color: #1F98F5;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="mainPageButton" layoutX="1010.0" layoutY="690.0" onMouseClicked="#onMainPageClicked" prefHeight="44.0" prefWidth="113.0" style="-fx-background-color: #1F98F5;" text="Main Page" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

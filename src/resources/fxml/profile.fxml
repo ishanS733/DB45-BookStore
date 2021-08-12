@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.profileController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="800.0" prefWidth="250.0" spacing="20.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <JFXButton fx:id="home" onMouseClicked="#homePressed" prefHeight="37.0" prefWidth="133.0" text="Home" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_LEFT" layoutX="250.0" layoutY="43.0" prefHeight="50.0" prefWidth="950.0" spacing="15.0">
+            <children>
+                <JFXTextField fx:id="search_bar" focusColor="WHITE" onMouseClicked="#search_barPressed" prefHeight="29.0" prefWidth="509.0" promptText="Enter Book ID to see reviews" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE;" unFocusColor="#b5b5b5" />
+            <Label fx:id="userWelcomeLabel1" prefHeight="39.0" prefWidth="176.0" text="Comments For Book:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="currBookName" prefHeight="39.0" prefWidth="176.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </HBox>
+        <TableView fx:id="table" layoutX="250.0" layoutY="123.0" onMouseClicked="#tablePressed" prefHeight="652.0" prefWidth="922.0" />
+        <Label fx:id="userWelcomeLabel" layoutX="56.0" layoutY="68.0" prefHeight="39.0" prefWidth="176.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <FontAwesomeIconView fx:id="user_icon" fill="#acacac" glyphName="USER" layoutX="103.0" layoutY="49.0" onMouseClicked="#user_iconPressed" size="30" />
+    </children>
+</AnchorPane>
